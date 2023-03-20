@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest 2 - Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/pagina-cadastro/variables.css">
+    <link rel="stylesheet" href="./src/css/pagina-cadastro/font.css">
+    <link rel="stylesheet" href="./src/css/pagina-cadastro/style.css">
+    <link rel="stylesheet" href="./src/css/pagina-cadastro/estados-dos-inputs-no-formulario.css">
+    <link rel="stylesheet" href="./src/css/pagina-cadastro/responsive.css">
+</head>
+<body>
+    <main class="main">
+        <div class="mensagem-sobre-duvidas">
+            <h1 class="titulo">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <p class="texto">Caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <form class="formulario" action="./paginas/cadastrado.html" method="get" autocomplete="on">
+
+            <span class="input-wrapper nome"><input type="text" class="input nome" id="nome" placeholder="Nome completo *" autocomplete="name" required></span>
+
+            <span class="input-wrapper email"><input type="email" class="input" id="email" placeholder="Email *" autocomplete="email" required></span>
+
+            <span class="input-wrapper telefone"><input type="tel" class="input" placeholder="Telefone *" maxlength="15" autocomplete="tel" required></span>
+
+            <span class="input-wrapper"><textarea class="input mensagem" id="texto-usuario" placeholder="Mensagem *" required></textarea></span>
+
+            <p class="aviso-campo-obrigatorio">*campos obrigatórios</p>
+
+            <input type="submit" class="btn-enviar desativado" value="Enviar" disabled>
+        </form>
+    </main>
+
+    <script src="./src/js/form-validation.js"></script>
+    <script src="./src/js/form-validation-regex.js"></script>
+</body>
+</html>

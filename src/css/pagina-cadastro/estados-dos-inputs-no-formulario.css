@@ -1,0 +1,44 @@
+.formulario .input-wrapper.preenchido-corretamente .input {
+    border-color: var(--cor-campo-preenchido-corretamente);
+    background-color: #6d80df2a;
+}
+
+.formulario .input-wrapper.vazio .input,
+.formulario .input-wrapper.preenchido-incorretamente .input {
+    border-color: var(--cor-campo-preenchido-errado);
+    margin: 0;
+    background-color: #f52e2e23;
+}
+
+.input-wrapper.preenchido-incorretamente .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #f52e2e2d inset;
+}
+
+.formulario .input-wrapper.vazio,
+.formulario .input-wrapper.preenchido-incorretamente {
+    color: var(--cor-campo-preenchido-errado);
+}
+
+.formulario .input-wrapper.vazio::after {
+    content: "campo obrigatório";
+    padding-bottom: 6px;
+}
+
+.formulario .input-wrapper.nome.preenchido-incorretamente::after {
+    content: 'Não é permitido números ou símbolos';
+}
+
+.formulario .input-wrapper.email.preenchido-incorretamente::after {
+    content: 'Digite um email válido';
+}
+
+.formulario .input-wrapper.telefone.preenchido-incorretamente::after {
+    content: 'Digite um telefone brasileiro válido e com DDD';
+}
+
+.formulario .btn-enviar.desativado,
+.formulario .btn-enviar.desativado:hover {
+    --cor-botoes: rgba(17, 65, 42, 0.452);
+    cursor: default;
+    background-color: var(--cor-botoes);
+}

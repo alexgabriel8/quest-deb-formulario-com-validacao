@@ -1,0 +1,15 @@
+@media (max-width: 720px) {
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .mensagem-sobre-duvidas {
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .formulario {
+        width: 90vw;
+    }
+}

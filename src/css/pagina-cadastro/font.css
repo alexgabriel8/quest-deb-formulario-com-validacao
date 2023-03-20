@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+p, input::placeholder, textarea::placeholder {
+    font-size: 1.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-weight: 700;
+}
+
+.mensagem-sobre-duvidas .titulo {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.formulario .input-wrapper.vazio::after {
+    font-size: 0.9rem;
+}

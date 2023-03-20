@@ -1,0 +1,8 @@
+:root {
+    --cor-botoes: #3CCC87;
+    --cor-botoes-hover: #2d9764;
+
+    --cor-campo-preenchido-errado: #F52E2E;
+    --cor-campo-preenchido-corretamente: #00C22B;
+    --cor-placeholder: #A8A8A8;
+}

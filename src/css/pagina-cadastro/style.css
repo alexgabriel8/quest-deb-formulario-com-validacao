@@ -1,0 +1,81 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #D5669E 10%, #B76DB0 30%, #6D80DF 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.mensagem-sobre-duvidas {
+    max-width: 300px;
+    color: white;
+}
+
+.mensagem-sobre-duvidas .titulo {
+    padding-bottom: 11px;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 378px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formulario .input-wrapper .input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #000000;
+    padding-left: 10px;
+    margin: 7px 0;
+}
+
+.formulario .input:focus,
+.formulario .input.mensagem:focus {
+    outline: 1px solid black;
+}
+
+.formulario .input-wrapper .input,
+.formulario .input-wrapper .btn-enviar {
+    border-radius: 5px;
+}
+
+.formulario .input-wrapper .input::placeholder {
+    color: var(--cor-placeholder);
+}
+
+.formulario .input-wrapper .input.mensagem {
+    width: 100%;
+    height: 100px;
+}
+
+.formulario .aviso-campo-obrigatorio {
+    position: relative;
+    top: -10px;
+}
+
+.formulario .input-wrapper.vazio + .aviso-campo-obrigatorio {
+    top: 0;
+}
+
+.formulario .btn-enviar {
+    height: 41px;
+    color: #FFFFFF;
+    background-color: var(--cor-botoes);
+    transition: background-color 0.3s;
+}
+
+.formulario .btn-enviar:hover {
+    background-color: var(--cor-botoes-hover);
+    cursor: pointer;
+}
