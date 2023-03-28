@@ -3,6 +3,7 @@ const inputs = document.querySelectorAll('.input')
 const btnSubmit = document.querySelector('.btn-enviar')
 
 function ativaOuDesativaSubmit() {
+/* Código antigo; foi substituído por um forEach. 
     for (let i = 0; i < inputWrappers.length; i++) {
         if (!inputWrappers[i].classList.contains('preenchido-corretamente')) {
             btnSubmit.setAttribute('disabled', "")
@@ -13,6 +14,17 @@ function ativaOuDesativaSubmit() {
             btnSubmit.classList.remove('desativado')
         }
     }
+*/
+    inputWrappers.forEach((inputWrapper) => {
+        if (!inputWrapper.classList.contains('preenchido-corretamente')) {
+            btnSubmit.setAttribute('disabled', "")
+            btnSubmit.classList.add('desativado')
+            return
+        } else {
+            btnSubmit.removeAttribute('disabled')
+            btnSubmit.classList.remove('desativado')
+        }
+    })
 }
 
 inputs.forEach((input, index) => {
